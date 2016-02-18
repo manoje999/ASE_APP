@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="main.css">
+<head >
+    <meta charset="UTF-8">
+    <title>Register Page</title>
+</head>
+<body>
+<style> body {
+    background-image: url("http://www.worldpropertychannel.com/news-assets/Lower-Manhattan-New-York-City.jpg");
+}</style>
+<h1 align="center">Registration Page</h1>
+<div ng-controller="registerCtrl">
+    <form action="/register.html" id="mylogin">
+<div class = "centre">
+    </br>
+  First Name :
+      <input type="text" id="Fname" ng-model="Fname">
+   Middle Name :
+       <input type="text"  id="Mname" ng-model="Mname">
+    Last Name :
+    <input type="text"  id="Lname" ng-model="Lname">
+    </br>
+    </br>
+    Address :
+    <input type="text"  id="Address" ng-model="Address">
+    Place :
+    <input type="text"  id="Place" ng-model="Place">
+    State :
+    <input type="text"  id="State" ng-model="State">
+    </br>
+    </br>
+    Contact No :
+    <input type="number"  id="CNumber" ng-model="CNumber">
+    Email :
+    <input type="email"  id="email" ng-model="email">
+    Zipcode :
+    <input type="number"  id="zipcode" ng-model="zipcode">
+    </br>
+    </br>
+    Login :
+    <input type="text"  id="Login" ng-model="Login">
+    Password :
+    <input type="password"  id="Password1" ng-model="Password1">
+    ReType-Password :
+    <input type="password"  id="Password2" ng-model="Password2">
+    </br>
+    </br>
+
+<div class = "row">
+      <button type="button" ng-click="submit()">Done !!</button></div></div>
+
+    </form>
+
+</div>
+</body>
+</html>

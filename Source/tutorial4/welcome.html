@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="main.css">
+<style>
+    body {
+        background-image: url("http://static1.squarespace.com/static/517b5b6ae4b01510f82efbe5/51a8a5b7e4b02509ec238d58/51bb0a34e4b0944ea53abeaa/1430555243892/Snowy+mountains+in+haze.+Caucasus+Mountains,+Georgia,+Gudauri..jpg")
+    }
+    #map-canvas {
+        width: 650px;
+        height: 450px;
+    }
+</style>
+<body>
+<h1 align="center"> Path and Weather </h1>
+<div ng-controller="Location">
+    <form action="/welcome" id="geolocate">
+<div style align="center">
+         <p>Source:<input type="text" id="From" ng-model="From"></p>
+         <p>Destination: <input type="text"  id="To" ng-model="To"></p>
+        <button type ="button" ng-click="submit()">Get Path</button>
+        </p>
+        </br> </div>
+        <div class="weatherModule">
+            <p align="center">Weather Updates</p>
+            <p class="currentConditions" ng-bind-html="renderHtml(currentweather)"></p>
+            <p class="currentConditions" ng-bind-html="renderHtml(currentweather2)"></p></div>
+            <div class="weatherModule1" id="map-canvas" style="height: 400px;"></div>
+
+    </form>
+</div>
+</body>
+</html>
+
