@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" href="main.css">
+<style>
+    body {
+        background-image: url("http://blogs-images.forbes.com/adamhartung/files/2014/07/walmart.png")
+    }
+    #map-canvas {
+        width: 650px;
+        height: 450px;
+    }
+</style>
+<body>
+<h1 align="center"> Search For Your Nearest Walmarts </h1>
+<div ng-controller="Location">
+    <form action="/welcome" id="geolocate">
+        <div style align="center">
+            <p>Enter Your Place of Search<input type="text" id="From" ng-model="From"></p>
+            <button type ="button" ng-click="submit()">Search</button>
+            </p>
+            </br> </div>
+        <div id="div_VenueList">
+            <h2> Nearest walmarts </h2>
+            <ul style="font-size: x-large">
+
+                <li ng-repeat="venue in venueList">
+                    <a href="" ng-click="locatevenue(venue)" color='black'>{{venue.name}},{{venue.address}},{{venue.city}},{{venue.zipcode}}</a>
+                </li>
+            </ul>
+
+        </div>
+        <!--<div class="weatherModule">-->
+            <!--<p align="center">Weather Updates</p>-->
+            <!--<p class="currentConditions" ng-bind-html="renderHtml(currentweather)"></p>-->
+            <!--<p class="currentConditions" ng-bind-html="renderHtml(currentweather2)"></p></div>-->
+        <div class="weatherModule1" id="map-canvas" style="height: 400px;"></div>
+
+    </form>
+</div>
+</body>
+</html>
+

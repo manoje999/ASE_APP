@@ -1,0 +1,22 @@
+<!Doctype html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+<style> body {
+    background-image: url("http://collegecouncil.emorycampuslife.org/wp-content/uploads/2015/02/WALMART-DFR-082213-7_40880253.jpg");
+}</style>
+<h1 align="center"> Welcome  </h1>
+<div align="center" ng-controller="loginCtrl">
+    <form action="/" id="mylogin">
+
+        <p>Username: <input type="text" id="username" ng-model="username"></p>
+        <p>Password: <input type="password"  id="password" ng-model="password"></p>
+
+
+        <button type="button" ng-click="submit()">Login</button>
+        <button type="button" ng-click="submit1()">Facebook Login</button>
+        </br>
+            </form>
+</div>
+</body>
+</html>
