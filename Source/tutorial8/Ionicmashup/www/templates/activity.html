@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+      <ion-pane ng-controller='pagecontroller'>
+      <ion-header-bar class="bar-stable">
+    <h2>Welcome to Ionic</h2>
+          </ion-header-bar>
+    <p>
+        <input id = "city" type="text" placeholder="find the market places" >
+        <button ng-click="getplaces()">Get Places</button>
+        <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap">
+        
+          <h2>Name: {{chat.name}}</h2>
+          <h2>address: {{chat.address}}</h2>
+          <h2>city: {{chat.city}}</h2>
+          <h2>zipcode: {{chat.zipcode}}</h2>
+          
+  
+      </ion-item>
+    </ion-list>
+
+    </p>
+   </ion-pane>
+  </ion-content>
+</ion-view>
+</body>
+</html>
