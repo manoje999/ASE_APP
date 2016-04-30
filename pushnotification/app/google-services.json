@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "230928039537",
+    "project_id": "master-shore-129519"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230928039537:android:04259f242ecfddd4",
+        "android_client_info": {
+          "package_name": "com.manojprabhakar.pushnotification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrAqgxqKZiFvC41Dyu_5Qauj5xsWCUJsQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
